@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "la_fabrique_pro_bold";
+    src: url("../fonts/LaFabriquePro-Bold.eot");
+    src: url("../fonts/LaFabriquePro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LaFabriquePro-Bold.woff") format("woff"), url("../fonts/LaFabriquePro-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "la_fabrique_pro_regular";
+    src: url("../fonts/LaFabriquePro-Regular.eot");
+    src: url("../fonts/LaFabriquePro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/LaFabriquePro-Regular.woff") format("woff"), url("../fonts/LaFabriquePro-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+* {
+    font-family: "la_fabrique_pro_regular", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.font-bold {
+    font-family: "la_fabrique_pro_bold", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
