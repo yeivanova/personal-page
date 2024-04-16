@@ -1,0 +1,18 @@
+.footer {
+    text-align: center;
+	padding-bottom: 5.5rem;
+
+    ul {
+        list-style: none;
+		display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+
+        .icon {
+            width: 3.75rem;
+            height: 3.75rem;
+        }
+    }
+}
