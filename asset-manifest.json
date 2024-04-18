@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.34fea820.css",
+    "main.js": "./static/js/main.a372dc65.js",
+    "static/js/787.7c11e204.chunk.js": "./static/js/787.7c11e204.chunk.js",
+    "static/media/LaFabriquePro-Regular.eot": "./static/media/LaFabriquePro-Regular.4e262028794579cb5749.eot",
+    "static/media/LaFabriquePro-Regular.ttf": "./static/media/LaFabriquePro-Regular.243f0130f03d20b4aa3c.ttf",
+    "static/media/LaFabriquePro-Bold.eot": "./static/media/LaFabriquePro-Bold.fc8d508809e0adebd006.eot",
+    "static/media/LaFabriquePro-Bold.ttf": "./static/media/LaFabriquePro-Bold.0b481ab68e964767964c.ttf",
+    "static/media/tag@2x.png": "./static/media/tag@2x.bf988761d0b4a75291a4.png",
+    "static/media/Elena_Ivanova_CV.pdf": "./static/media/Elena_Ivanova_CV.f3601ecd58c37f36321d.pdf",
+    "static/media/arrow@2x.png": "./static/media/arrow@2x.70beb6eee731ec9b1c9c.png",
+    "static/media/LaFabriquePro-Regular.woff": "./static/media/LaFabriquePro-Regular.2de8da1ff61dcf790a47.woff",
+    "static/media/LaFabriquePro-Bold.woff": "./static/media/LaFabriquePro-Bold.6fc53038a03e2142866a.woff",
+    "static/media/instagram.svg": "./static/media/instagram.327d3f73d7bf38d3769b072b238dacd2.svg",
+    "static/media/github.svg": "./static/media/github.ea682b55f1037e18f0e743615019d0aa.svg",
+    "static/media/email.svg": "./static/media/email.5ff549328e38973dcc6a30b70a7d97ea.svg",
+    "static/media/medium.svg": "./static/media/medium.ae0b28a9929bfc5f68510ed5d698481f.svg",
+    "index.html": "./index.html",
+    "static/media/linkedin.svg": "./static/media/linkedin.5b21c144330cfb1ac3ff7f8a9847f442.svg",
+    "main.34fea820.css.map": "./static/css/main.34fea820.css.map",
+    "main.a372dc65.js.map": "./static/js/main.a372dc65.js.map",
+    "787.7c11e204.chunk.js.map": "./static/js/787.7c11e204.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34fea820.css",
+    "static/js/main.a372dc65.js"
+  ]
+}
