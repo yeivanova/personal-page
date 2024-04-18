@@ -30,7 +30,7 @@ export const App: FC = () => {
                         <Bento>
                             <h3>The technologies I&nbsp;use most often:</h3>
                             <ul className={styles.text_list}>
-                                <li>JavaScript (ES6), TypeScript;</li>
+                                <li>JavaScript (ES2019), TypeScript;</li>
                                 <li>React JS, Redux;</li>
                                 <li>HTML;</li>
                                 <li>CSS, LESS/SCSS/Stylus;</li>
