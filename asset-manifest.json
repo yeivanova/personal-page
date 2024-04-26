@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.34fea820.css",
-    "main.js": "./static/js/main.a372dc65.js",
+    "main.js": "./static/js/main.a9ff5dd4.js",
     "static/js/787.7c11e204.chunk.js": "./static/js/787.7c11e204.chunk.js",
     "static/media/LaFabriquePro-Regular.eot": "./static/media/LaFabriquePro-Regular.4e262028794579cb5749.eot",
     "static/media/LaFabriquePro-Regular.ttf": "./static/media/LaFabriquePro-Regular.243f0130f03d20b4aa3c.ttf",
@@ -19,11 +19,11 @@
     "index.html": "./index.html",
     "static/media/linkedin.svg": "./static/media/linkedin.5b21c144330cfb1ac3ff7f8a9847f442.svg",
     "main.34fea820.css.map": "./static/css/main.34fea820.css.map",
-    "main.a372dc65.js.map": "./static/js/main.a372dc65.js.map",
+    "main.a9ff5dd4.js.map": "./static/js/main.a9ff5dd4.js.map",
     "787.7c11e204.chunk.js.map": "./static/js/787.7c11e204.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.34fea820.css",
-    "static/js/main.a372dc65.js"
+    "static/js/main.a9ff5dd4.js"
   ]
 }
