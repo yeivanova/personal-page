@@ -10,7 +10,7 @@ import CV from "../../files/Elena_Ivanova_CV.pdf";
 
 export const App: FC = () => {
     const [viewMore, setViewMore] = useState<boolean>(false);
-    
+
     return (
         <div className={styles.app}>
             <Header />
@@ -20,8 +20,9 @@ export const App: FC = () => {
                         <h1>Hey! I’m Elena</h1>
                         <Bento>
                             <p>
-                                I am an experienced <span className={styles.hightlighted}>web developer</span> with a strong passion for building effective web-sites. My professional interests include UX, web animations,
-                                accessibility techniques. I get great inspiration from modern web design and I feel excitement when starting to work with a new design markup 🌟
+                                I am an experienced <span className={styles.hightlighted}>frontend developer</span> with a strong passion for building effective websites.
+                                <br /> ✨ My goal is to ensure that every pixel is precisely aligned and every element of UI functions seamlessly, providing users with an intuitive and efficient digital experience.
+                                <br />I get great inspiration from modern web design and I feel excitement when starting to work with a new design markup 🌟
                             </p>
                         </Bento>
                     </div>
@@ -102,7 +103,7 @@ export const App: FC = () => {
                         </Bento>
                     </div>
                     <div className={cn(styles.col, styles.col_1)}>
-                        <div className="text_wrapper">
+                        <div className={styles.text_wrapper}>
                             <h2>Send me a&nbsp;massage</h2>
                             <p>
                                 Got a question or proposal, or&nbsp;just want to say hello? <br />
