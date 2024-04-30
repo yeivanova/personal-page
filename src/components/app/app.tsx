@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 import { Bento } from "../bento/bento";
+import { ScrollList } from "../scrollList/scrollList";
 import cn from "classnames";
 import styles from "./app.module.scss";
 import tag from "../../images/tag@2x.png";
@@ -28,19 +29,8 @@ export const App: FC = () => {
                     </div>
                     <div className={cn(styles.col, styles.col_1)}>
                         <h2>My stack</h2>
-                        <Bento>
-                            <h3>The technologies I&nbsp;use most often:</h3>
-                            <ul className={styles.text_list}>
-                                <li>JavaScript (ES2019), TypeScript;</li>
-                                <li>React JS, Redux;</li>
-                                <li>HTML;</li>
-                                <li>CSS, LESS/SCSS/Stylus;</li>
-                                <li>Jest, Cypress;</li>
-                                <li>Gulp, Webpack;</li>
-                                <li>Git;</li>
-                                <li>Figma, Adobe Photoshop.</li>
-                            </ul>
-                        </Bento>
+                        {/* <h3>The technologies I&nbsp;use most often:</h3> */}
+                        <ScrollList list={["HTML & CSS", "LESS/SCSS/Stylus", "JavaScript, TypeScript", "React JS, Redux", "Jest, Cypress", "Gulp, Webpack", "Git", "Figma"]} />
                     </div>
                     <div className={cn(styles.col, styles.col_2)}>
                         <h2>CV</h2>

@@ -50,3 +50,21 @@
     @content;
   }
 }
+
+@mixin scrollbar {
+	&::-webkit-scrollbar {
+        width: 5px;
+        border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 3px;
+        background-color: var(--scrollbarTrack);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border: 1px solid var(--scrollbarThumb);
+        background-color: var(--scrollbarThumb);
+        border-radius: 3px;
+    }
+}
