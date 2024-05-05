@@ -13,9 +13,33 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "mona_sans_condensed_bold";
+    src: url("../fonts/MonaSansCondensed-Bold.eot");
+    src: url("../fonts/MonaSansCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MonaSansCondensed-Bold.woff") format("woff"), url("../fonts/MonaSansCondensed-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "mona_sans_condensed_regular";
+    src: url("../fonts/MonaSansCondensed-Regular.eot");
+    src: url("../fonts/MonaSansCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MonaSansCondensed-Regular.woff") format("woff"), url("../fonts/MonaSansCondensed-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "random_grotesque_slim";
+    src: url("../fonts/RandomGrotesqueSlim.eot");
+    src: url("../fonts/RandomGrotesqueSlim.eot?#iefix") format("embedded-opentype"), url("../fonts/RandomGrotesqueSlim.woff") format("woff"), url("../fonts/RandomGrotesqueSlim.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body,
 * {
-    font-family: "la_fabrique_pro_regular", Arial, Helvetica, sans-serif;
+    font-family: "random_grotesque_slim", Arial, Helvetica, sans-serif;
 	font-weight: normal;
 }
 

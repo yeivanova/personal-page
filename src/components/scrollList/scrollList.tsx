@@ -10,8 +10,8 @@ export const ScrollList: FC<ScrollListProps> = ({ list }) => {
 	
 	useEffect(() => {
 		if( scrollToRef.current ) {
-            scrollToRef.current.scrollIntoView();
-        }
+			scrollToRef.current.scrollIntoView();
+		}
 	}, []);
 
 	return (

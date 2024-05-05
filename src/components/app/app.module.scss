@@ -25,7 +25,7 @@
 .section {
     @include mixins.breakpoint-tablet-up {
         display: grid;
-        grid-template-columns: 1fr 4rem 1fr;
+        grid-template-columns: 1fr 4rem 1fr 4rem 6.25rem;
     }
 }
 
@@ -40,13 +40,34 @@
 .col_1 {
     grid-column: 1 / 2;
 }
+
 .col_2 {
     grid-column: 3 / 4;
 }
 
+.col_image {
+    grid-column: 3 / 5;
+}
+
+.col_button {
+    grid-column: 5 / 6;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
 .link {
-    color: var(--accentColor);
+    display: inline-block;
+    font-size: 2.25rem;
+    line-height: 1;
+    padding: 0.5rem 2.5rem 0.4rem;
+    margin-top: 1.2rem;
+    font-family: "mona_sans_condensed_bold", sans-serif;
+    color: var(--lightColor);
+    background-color: var(--accentColor);
+    border-radius: 3rem;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .hightlighted {
@@ -74,7 +95,8 @@ ul.text_list {
 }
 
 .tag_img {
-    margin-top: 4.4rem;
+    max-width: 80%;
+    margin-top: 2rem;
 
     @include mixins.breakpoint-tablet-down {
         width: 40rem;
@@ -84,11 +106,8 @@ ul.text_list {
 }
 
 .arrow_img {
-    position: relative;
-    display: inline-block;
-    margin: -2rem 0 -4rem -4rem;
-    transform: rotateY(-180deg);
-    transform-origin: center;
+    max-width: 100%;
+    margin: -4rem auto 0;
     z-index: 0;
 
     @include mixins.breakpoint-tablet-down {
@@ -103,4 +122,25 @@ ul.text_list {
     line-height: 2.4rem;
     border: none;
     cursor: pointer;
+}
+
+.vertical_link {
+    width: 100%;
+    padding: 3rem 1rem;
+    font-size: 2.25rem;
+    font-family: "mona_sans_condensed_bold", sans-serif;
+    line-height: 2;
+    color: var(--lightColor);
+    background-color: var(--accentColor);
+    border-radius: 1.5rem;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include mixins.breakpoint-tablet-down {
+        writing-mode: unset;
+        padding: 1rem 3rem;
+    }
 }

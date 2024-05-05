@@ -7,7 +7,6 @@ import cn from "classnames";
 import styles from "./app.module.scss";
 import tag from "../../images/tag@2x.png";
 import arrow from "../../images/arrow@2x.png";
-import CV from "../../files/Elena_Ivanova_CV.pdf";
 
 export const App: FC = () => {
     const [viewMore, setViewMore] = useState<boolean>(false);
@@ -27,30 +26,25 @@ export const App: FC = () => {
                             </p>
                         </Bento>
                     </div>
+                    <div className={cn(styles.col, styles.col_button)}>
+                    <a className={styles.vertical_link} href="https://t.me/yeivanova" target="_blank" rel="noreferrer">Send me a message</a>
+            
+                    </div>
                     <div className={cn(styles.col, styles.col_1)}>
                         <h2>My stack</h2>
                         {/* <h3>The technologies I&nbsp;use most often:</h3> */}
                         <ScrollList list={["HTML & CSS", "LESS/SCSS/Stylus", "JavaScript, TypeScript", "React JS, Redux", "Jest, Cypress", "Gulp, Webpack", "Git", "Figma"]} />
                     </div>
-                    <div className={cn(styles.col, styles.col_2)}>
-                        <h2>CV</h2>
-                        <Bento>
-                            <h3 className={styles.h3}>
-                                You can download my CV&nbsp;
-                                <a href={CV} className={cn(styles.link, styles.hightlighted, "font-bold")} download="CV-PDF-document" target="_blank" rel="noreferrer">
-                                    here
-                                </a>
-                            </h3>
-                        </Bento>
+                    <div className={cn(styles.col, styles.col_image)}>
                         <img className={styles.tag_img} src={tag} alt="" />
                     </div>
                 </section>
 
                 <section className={styles.section} id="work">
                     <div className={cn(styles.col, styles.full_width)}>
-                        <h2 className="no_margin">Here is a list of my open source projects, web apps and experiments</h2>
+                        <h2 className="no_margin">Here is a list of my open source projects,<br /> web apps and experiments</h2>
                     </div>
-                    <div className={cn(styles.col, styles.col_1)}>
+                    <div className={cn(styles.col, styles.full_width)}>
                         <Bento>
                             <h3>Projects</h3>
                             <ul className={styles.text_list}>
@@ -75,7 +69,7 @@ export const App: FC = () => {
                             </ul>
                         </Bento>
                     </div>
-                    <div className={cn(styles.col, styles.col_2)}>
+                    {/* <div className={cn(styles.col, styles.col_1)}>
                         <Bento>
                             <h3>Articles</h3>
                             <ul className={styles.text_list}>
@@ -92,19 +86,7 @@ export const App: FC = () => {
                             </ul>
                         </Bento>
                     </div>
-                    <div className={cn(styles.col, styles.col_1)}>
-                        <div className={styles.text_wrapper}>
-                            <h2>Send me a&nbsp;massage</h2>
-                            <p>
-                                Got a question or proposal, or&nbsp;just want to say hello? <br />
-                                <a className={cn(styles.link, "font-bold")} href="https://t.me/yeivanova" target="_blank" rel="noreferrer">
-                                    Go ahead
-                                </a>
-                                .
-                            </p>
-                        </div>
-                        <img className={styles.arrow_img} src={arrow} alt="" />
-                    </div>
+                    
                     <div className={cn(styles.col, styles.col_2)}>
                         <Bento>
                             <h3>Certificates</h3>
@@ -120,6 +102,22 @@ export const App: FC = () => {
                                 view {viewMore ? "less" : "more"}
                             </button>
                         </Bento>
+                    </div> */}
+
+                    <div className={cn(styles.col, styles.col_1)}>
+                        <img className={styles.arrow_img} src={arrow} alt="" />
+                    </div>
+                    <div className={cn(styles.col, styles.col_2)}>
+                        <div className={styles.text_wrapper}>
+                            <h3>Send me a&nbsp;massage</h3>
+                            <p>
+                                Got a question or proposal, <br />or&nbsp;just want to say hello? <br />
+                                <a className={cn(styles.link, "font-bold")} href="https://t.me/yeivanova" target="_blank" rel="noreferrer">
+                                    Go ahead
+                                </a>
+                            </p>
+                        </div>
+                       
                     </div>
                 </section>
             </main>

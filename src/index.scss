@@ -70,7 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "la_fabrique_pro_bold", Arial, Helvetica, sans-serif;
+    font-family: "mona_sans_condensed_bold", sans-serif;
     font-weight: normal;
     overflow-wrap: break-word;
 }
@@ -150,26 +150,27 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     line-height: 1;
     margin: 0 0 3rem;
+    text-transform: uppercase;
 
     @include mixins.breakpoint-tablet-down {
         font-size: 3rem;
         margin: 0 0 2rem;
+        text-align: center;
     }
 }
 
 h3 {
-    font-size: 2.5rem;
-    line-height: 2.75rem;
-    letter-spacing: -0.025rem;
-    margin-bottom: 2rem;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
     font-size: 2rem;
-    line-height: 2.4rem;
+    line-height: 2.3rem;
 }
 
 ol,
