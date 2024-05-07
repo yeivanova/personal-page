@@ -1,29 +1,37 @@
 {
   "files": {
-    "main.css": "./static/css/main.34fea820.css",
-    "main.js": "./static/js/main.a9ff5dd4.js",
+    "main.css": "./static/css/main.045f67c2.css",
+    "main.js": "./static/js/main.dc8b5fdd.js",
     "static/js/787.7c11e204.chunk.js": "./static/js/787.7c11e204.chunk.js",
     "static/media/LaFabriquePro-Regular.eot": "./static/media/LaFabriquePro-Regular.4e262028794579cb5749.eot",
     "static/media/LaFabriquePro-Regular.ttf": "./static/media/LaFabriquePro-Regular.243f0130f03d20b4aa3c.ttf",
     "static/media/LaFabriquePro-Bold.eot": "./static/media/LaFabriquePro-Bold.fc8d508809e0adebd006.eot",
     "static/media/LaFabriquePro-Bold.ttf": "./static/media/LaFabriquePro-Bold.0b481ab68e964767964c.ttf",
     "static/media/tag@2x.png": "./static/media/tag@2x.bf988761d0b4a75291a4.png",
-    "static/media/Elena_Ivanova_CV.pdf": "./static/media/Elena_Ivanova_CV.f3601ecd58c37f36321d.pdf",
+    "static/media/RandomGrotesqueSlim.ttf": "./static/media/RandomGrotesqueSlim.ce1f2f4b5f0bac10efa3.ttf",
+    "static/media/MonaSansCondensed-Bold.ttf": "./static/media/MonaSansCondensed-Bold.d7365ac13beab633d1f8.ttf",
     "static/media/arrow@2x.png": "./static/media/arrow@2x.70beb6eee731ec9b1c9c.png",
+    "static/media/RandomGrotesqueSlim.eot": "./static/media/RandomGrotesqueSlim.3edda8b3f224a79a1f84.eot",
+    "static/media/MonaSansCondensed-Regular.eot": "./static/media/MonaSansCondensed-Regular.0b59597a8c383c435285.eot",
+    "static/media/MonaSansCondensed-Regular.ttf": "./static/media/MonaSansCondensed-Regular.f7d0c32bbdf5b7c59b11.ttf",
+    "static/media/MonaSansCondensed-Bold.eot": "./static/media/MonaSansCondensed-Bold.8eebe8da588799790da9.eot",
     "static/media/LaFabriquePro-Regular.woff": "./static/media/LaFabriquePro-Regular.2de8da1ff61dcf790a47.woff",
     "static/media/LaFabriquePro-Bold.woff": "./static/media/LaFabriquePro-Bold.6fc53038a03e2142866a.woff",
+    "static/media/RandomGrotesqueSlim.woff": "./static/media/RandomGrotesqueSlim.02d7249edb8b2bbf90cc.woff",
+    "static/media/MonaSansCondensed-Regular.woff": "./static/media/MonaSansCondensed-Regular.efc82afbec0fedb73fba.woff",
+    "static/media/MonaSansCondensed-Bold.woff": "./static/media/MonaSansCondensed-Bold.803806214f0097e895f7.woff",
     "static/media/instagram.svg": "./static/media/instagram.327d3f73d7bf38d3769b072b238dacd2.svg",
     "static/media/github.svg": "./static/media/github.ea682b55f1037e18f0e743615019d0aa.svg",
     "static/media/email.svg": "./static/media/email.5ff549328e38973dcc6a30b70a7d97ea.svg",
     "static/media/medium.svg": "./static/media/medium.ae0b28a9929bfc5f68510ed5d698481f.svg",
     "index.html": "./index.html",
     "static/media/linkedin.svg": "./static/media/linkedin.5b21c144330cfb1ac3ff7f8a9847f442.svg",
-    "main.34fea820.css.map": "./static/css/main.34fea820.css.map",
-    "main.a9ff5dd4.js.map": "./static/js/main.a9ff5dd4.js.map",
+    "main.045f67c2.css.map": "./static/css/main.045f67c2.css.map",
+    "main.dc8b5fdd.js.map": "./static/js/main.dc8b5fdd.js.map",
     "787.7c11e204.chunk.js.map": "./static/js/787.7c11e204.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34fea820.css",
-    "static/js/main.a9ff5dd4.js"
+    "static/css/main.045f67c2.css",
+    "static/js/main.dc8b5fdd.js"
   ]
 }
