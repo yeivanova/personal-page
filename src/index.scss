@@ -5,6 +5,7 @@
     --textColor: #000000;
     --accentColor: #9c7df4;
     --lightColor: #ffffff;
+    --highlightColor: #E7FF56;
     --backgroundColor: #010c15;
     --scrollbarTrack: #00000078;
     --scrollbarThumb: #9c7df46e;
@@ -114,6 +115,10 @@ body {
     margin: 0;
 }
 
+.align_center {
+    text-align: center;
+}
+
 html {
     color: var(--lightColor);
     background-color: var(--backgroundColor);
@@ -140,7 +145,7 @@ html {
 h1 {
     font-size: 6rem;
     line-height: 5.5rem;
-    margin: 0 0 3rem;
+    margin: 0 0 1.5rem;
 
     @include mixins.breakpoint-tablet-down {
         font-size: 5rem;

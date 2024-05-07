@@ -13,14 +13,14 @@ export const Header: FC = () => {
                         </AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink href="#work" offset="50">
-                            Work
+                        <AnchorLink href="#projects" offset="50">
+                            Projects
                         </AnchorLink>
                     </li>
                     <li>
-                        <a target="_blank" rel="noreferrer" href="https://t.me/yeivanova" className={styles.button}>
-                            Send me a message
-                        </a>
+                        <AnchorLink href="#contacts" offset="50">
+                            Contacts
+                        </AnchorLink>
                     </li>
                 </ul>
             </nav>

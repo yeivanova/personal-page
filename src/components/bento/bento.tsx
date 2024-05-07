@@ -10,7 +10,9 @@ type BentoProps = {
 export const Bento: FC<BentoProps> = ({ children, className }) => {
   return (
     <div className={cn(styles.bento, (typeof className !== "undefined") && className)}>
-      { children }
+      <div className={styles.inner}>
+        {children}
+      </div>
     </div>
   );
 }

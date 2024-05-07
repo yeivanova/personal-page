@@ -1,6 +1,30 @@
 .bento {
-	padding: 2.5rem;
-	color: var(--textColor);
-	border-radius: 2.5rem;
-	background-color: var(--lightColor);
+    position: relative;
+    padding: 2.5rem;
+    color: var(--lightColor);
+    border-radius: 2.5rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(64, 100, 255, 0.1) 100%);
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        inset: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 2.5rem;
+        padding: 2px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(64, 100, 255, 0.2) 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: 0;
+    }
+
+    .inner {
+        position: relative;
+        z-index: 1;
+    }
 }

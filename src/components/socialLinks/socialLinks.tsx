@@ -1,15 +1,15 @@
 import { FC } from "react";
-import styles from "./footer.module.scss";
+import styles from "./socialLinks.module.scss";
 import github from "../../images/icons/github.svg";
 import linkedin from "../../images/icons/linkedin.svg";
 import medium from "../../images/icons/medium.svg";
 import instagram from "../../images/icons/instagram.svg";
 import email from "../../images/icons/email.svg";
 
-export const Footer: FC = () => {
+export const SocialLinks: FC = () => {
     return (
-        <footer className={styles.footer}>
-            <h3>Find me in:</h3>
+        <section className={styles.social_links_wrapper}>
+            <h3>Find me&nbsp;in:</h3>
             <ul className={styles.social_links}>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://github.com/yeivanova/">
@@ -37,6 +37,6 @@ export const Footer: FC = () => {
                     </a>
                 </li>
             </ul>
-        </footer>
+        </section>
     );
 };

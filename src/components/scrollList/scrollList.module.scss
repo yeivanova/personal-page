@@ -1,24 +1,19 @@
 @use "/src/styles/mixins";
 
 .scroll_list_container {
-    display: inline-block;
     position: relative;
-    max-height: 16rem;
-    padding: 6rem 20px 6rem;
+    max-height: 19rem;
+    padding: 8rem 20px 8rem;
     overflow-y: auto;
-
-    @include mixins.breakpoint-tablet-down {
-        display: block;
-    }
 }
 
 .scroll_list {
     text-align: center;
 
     li {
-		margin-bottom: 1rem;
+		margin-bottom: 0.7rem;
 
-        &:before {
+        &::before {
             display: none;
         }
     }
@@ -26,7 +21,12 @@
 
 @keyframes animate-it {
     0% {
-        opacity: 0.15;
+        opacity: 0.1;
+		font-weight: normal;
+		transform: translateY(-3px);
+    }
+    25% {
+        opacity: 0.25;
 		font-weight: normal;
 		transform: translateY(-3px);
     }
@@ -35,8 +35,13 @@
 		font-weight: bold;
 		transform: translateY(0);
     }
+    75% {
+        opacity: 0.25;
+		font-weight: normal;
+		transform: translateY(-3px);
+    }
     100% {
-        opacity: 0.15;
+        opacity: 0.1;
 		font-weight: normal;
 		transform: translateY(-3px);
     }
@@ -48,7 +53,6 @@
             scroll-snap-align: center;
             animation: animate-it 1.5s ease both;
             animation-timeline: view();
-            animation-range: 25% 85%;
         }
     }
 }
