@@ -51,7 +51,7 @@
   }
 }
 
-@mixin scrollbar {
+@mixin scrollbar() {
 	&::-webkit-scrollbar {
         width: 5px;
         border-radius: 3px;
@@ -67,4 +67,40 @@
         background-color: var(--scrollbarThumb);
         border-radius: 3px;
     }
+}
+
+@mixin horizontal-scrollbar() {
+  &::-webkit-scrollbar {
+    height: 5px;
+    width: 0;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+      border-radius: 3px;
+      background-color: var(--scrollbarTrack);
+  }
+
+  &::-webkit-scrollbar-thumb {
+      border: 1px solid var(--scrollbarThumb);
+      background-color: var(--scrollbarThumb);
+      border-radius: 3px;
+  }
+}
+
+@mixin no-scrollbar() {
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 0;
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-track {
+    height: 0;
+    width: 0;
+  }
 }

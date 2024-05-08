@@ -8,7 +8,7 @@
     --highlightColor: #E7FF56;
     --backgroundColor: #010c15;
     --scrollbarTrack: #00000078;
-    --scrollbarThumb: #9c7df46e;
+    --scrollbarThumb: #574a7c;
 }
 
 *,
@@ -46,6 +46,8 @@ html {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+
+    @include mixins.scrollbar();
 }
 
 img,
@@ -117,6 +119,14 @@ body {
 
 .align_center {
     text-align: center;
+}
+
+.scrollbar_hidden {
+    @include mixins.no-scrollbar();
+}
+
+.horizontal_scrollbar {
+    @include mixins.horizontal-scrollbar();
 }
 
 html {

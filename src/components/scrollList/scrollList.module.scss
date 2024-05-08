@@ -5,6 +5,8 @@
     max-height: 19rem;
     padding: 8rem 20px 8rem;
     overflow-y: auto;
+
+    
 }
 
 .scroll_list {
@@ -52,7 +54,11 @@
         .scroll_list li {
             scroll-snap-align: center;
             animation: animate-it 1.5s ease both;
-            animation-timeline: view();
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-fill-mode: both;
+            animation-name: animate-it;
+            animation-timeline: view() !important;
         }
     }
 }
