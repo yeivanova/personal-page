@@ -16,6 +16,11 @@
         grid-template-columns: 1fr 4rem 1fr 2.5rem 6.25rem;
     }
 
+    @include mixins.breakpoint-tablet-down {
+        display: flex;
+        flex-direction: column;
+    }
+
     ul {
         list-style: none;
 
@@ -27,10 +32,6 @@
             }
         }
     }
-}
-
-.section {
-    
 }
 
 .col {
@@ -57,9 +58,11 @@
 }
 
 .sticky {
-    position: sticky;
-    top: 4rem;
-    align-self: start;
+    @include mixins.breakpoint-tablet-up {
+        position: sticky;
+        top: 4rem;
+        align-self: start;
+    }
 }
 
 .two_col_text {
@@ -150,7 +153,7 @@ ul.text_list {
     margin: 2rem auto;
 
     @include mixins.breakpoint-tablet-down {
-        width: 30rem;
+        width: 20rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -163,7 +166,7 @@ ul.text_list {
 
     @include mixins.breakpoint-tablet-down {
         max-width: 25rem;
-        margin: -4rem auto 0;
+        margin: -4rem auto;
         transform: rotateY(-180deg);
     }
 }
@@ -198,6 +201,7 @@ ul.text_list {
 
 .projects {
     overflow: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 .projects_wrapper {
@@ -208,9 +212,68 @@ ul.text_list {
     align-items: stretch;
     gap: 2.5rem;
     padding: 0 0 2rem;
+    // scroll-snap-align: center;
+    // scroll-snap-type: x mandatory;
+    // max-width: calc(40rem * 3);
+	// overflow: scroll;
 }
 
 .project_outer {
     flex-basis: 33%;
     flex-shrink: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: scroll()) {
+        .scroll_list li {
+            animation: linear animate-projects both;
+            animation-timeline: view() !important;
+        }
+    }
+}
+
+@keyframes animate-projects {
+	0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+	100% {
+		opacity: 0;
+	}
+}
+
+@include mixins.breakpoint-tablet-down {
+    .col_about {
+        order: 0;
+    }
+    
+    .col_button {
+        order: 1;
+    }
+
+    .col_stack {
+        order: 2;
+    }
+
+    .col_tag_img {
+        order: 3;
+    }
+
+    .sticky {
+        order: 7;
+    }
+
+    .col_projects {
+        order: 4;
+    }
+
+    .col_arrow_img {
+        order: 6;
+    }
+
+    .col_contacts {
+        order: 5;
+    }
 }

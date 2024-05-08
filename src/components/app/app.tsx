@@ -22,7 +22,7 @@ export const App: FC = () => {
         <div className={styles.app}>
             <Header />
             <main className={styles.main} id="wrapper">
-                <section className={cn(styles.col, styles.full_width)} id="about">
+                <section className={cn(styles.col, styles.full_width, styles.col_about)} id="about">
                     <Bento>
                         <h1>Hey! I’m Elena</h1>
                         <p className={styles.two_col_text}>
@@ -34,23 +34,23 @@ export const App: FC = () => {
                         </p>
                     </Bento>
                 </section>
-                <div className={cn(styles.col, styles.col_aside)}>
+                <div className={cn(styles.col, styles.col_aside, styles.col_button)}>
                     <a className={styles.vertical_link} href="https://t.me/yeivanova" target="_blank" rel="noreferrer">
                         ⚡️ &nbsp;Send me a message&nbsp; ⚡️
                     </a>
                 </div>
-                <div className={cn(styles.col, styles.col_1)}>
+                <div className={cn(styles.col, styles.col_1, styles.col_stack)}>
                     <h2 className={"align_center"}>My stack</h2>
                     <ScrollList list={["HTML & CSS", "LESS/SCSS/Stylus", "JavaScript, TypeScript", "React JS, Redux", "Jest, Cypress", "Gulp, Webpack", "Git", "Figma"]} />
                 </div>
-                <div className={cn(styles.col, styles.col_2, styles.center_wrapper)}>
+                <div className={cn(styles.col, styles.col_2, styles.col_tag_img, styles.center_wrapper)}>
                     <img className={styles.tag_img} src={tag} alt="" />
                 </div>
                 <div className={cn(styles.col, styles.col_aside, styles.sticky)}>
                     <SocialLinks />
                 </div>
 
-                <section className={cn(styles.col, styles.full_width)} id="projects">
+                <section className={cn(styles.col, styles.full_width, styles.col_projects)} id="projects">
                     <h2>
                         Here is a list of my open source projects,
                         <br /> web apps and experiments
@@ -69,10 +69,10 @@ export const App: FC = () => {
                     </div>
                 </section>
 
-                <section className={cn(styles.col, styles.col_1)} id="contacts">
+                <section className={cn(styles.col, styles.col_1, styles.col_arrow_img)} id="contacts">
                     <img className={styles.arrow_img} src={arrow} alt="" />
                 </section>
-                <div className={cn(styles.col, styles.col_2, styles.center_wrapper)}>
+                <div className={cn(styles.col, styles.col_2, styles.center_wrapper, styles.col_contacts)}>
                     <div className={styles.text_wrapper}>
                         <h3>Send me a&nbsp;massage</h3>
                         <p>

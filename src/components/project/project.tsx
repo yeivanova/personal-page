@@ -15,11 +15,11 @@ export const Project: FC<ProjectType> = ({ name, description, type, image, link,
                 <h3 className={styles.title}>{name}</h3>
                 <div className={styles.text}>{description}</div>
                 <div className={styles.links}>
-                    <a className={cn(styles.link, styles.web_link)} href={link}>
+                    <a className={cn(styles.link, styles.web_link)} href={link} target="_blank" rel="noreferrer">
                         <img className={styles.link_icon} src={linkIcon} width="12" height="12" alt="" />
                         Check it out
                     </a>
-                    <a className={cn(styles.link, styles.code_link)} href={codeLink}>
+                    <a className={cn(styles.link, styles.code_link)} href={codeLink} target="_blank" rel="noreferrer">
                         Code here
                     </a>
                 </div>
