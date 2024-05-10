@@ -3,6 +3,7 @@
 .social_links_wrapper {
     @include mixins.breakpoint-tablet-down {
         text-align: center;
+        margin-bottom: 4.5rem;
     }
 
     h3 {

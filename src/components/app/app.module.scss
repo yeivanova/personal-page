@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.container {
+.section {
     max-width: 70rem;
     padding: 0 2.5rem;
     margin: auto;
@@ -23,8 +23,6 @@
 .main {
     position: relative;
     padding-top: 3.625rem;
-
-    
 
     ul {
         list-style: none;
@@ -60,6 +58,10 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
+}
+
+.col_projects_header {
+    margin-bottom: 0;
 }
 
 .col_projects {
@@ -212,35 +214,7 @@ ul.text_list {
 }
 
 @include mixins.breakpoint-tablet-down {
-    .col_about {
-        order: 0;
-    }
-
-    .col_button {
-        order: 1;
-    }
-
-    .col_stack {
-        order: 2;
-    }
-
-    .col_tag_img {
-        order: 3;
-    }
-
-    .sticky {
-        order: 7;
-    }
-
-    .col_projects {
-        order: 4;
-    }
-
-    .col_arrow_img {
-        order: 6;
-    }
-
-    .col_contacts {
-        order: 5;
+    .section_contacts {
+        flex-direction: column-reverse;
     }
 }

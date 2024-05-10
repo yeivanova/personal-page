@@ -37,7 +37,7 @@
 
 .underlined {
     border-bottom: 1px solid transparent;
-    animation: 0.4s underline-it 3.5s ease both;
+    animation: 0.4s underline-it 2.5s ease both;
     transform-origin: left;
 
     @keyframes underline-it {
@@ -51,7 +51,7 @@
 }
 
 .underlined2 {
-    animation-delay: 4.5s;
+    animation-delay: 3s;
 }
 
 .hightlighted {
@@ -64,7 +64,7 @@
     transform-origin: left;
     border-color: transparent;
 	transform: scaleX(1.3);
-    animation: 0.4s hightlight-it 2.5s ease both;
+    animation: 0.4s hightlight-it 2s ease both;
 }
 
 @keyframes hightlight-it {
