@@ -12,6 +12,7 @@
 .col_img {
     flex-basis: 50%;
     flex-shrink: 0;
+    max-width: 25rem;
 }
 
 .col_content {
@@ -20,6 +21,10 @@
     padding-left: 1.5rem;
 
     @include mixins.breakpoint-tablet-down {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
         padding: 0 0 3rem;
     }
 }

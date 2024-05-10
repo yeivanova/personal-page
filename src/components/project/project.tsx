@@ -1,8 +1,8 @@
 import { FC } from "react";
 import styles from "./project.module.scss";
+import cn from "classnames";
 import linkIcon from "../../images/icons/link.svg";
 import { ProjectType } from "../../types/projectType";
-import cn from "classnames";
 
 export const Project: FC<ProjectType> = ({ name, description, type, image, link, codeLink }) => {
     return (
@@ -11,9 +11,12 @@ export const Project: FC<ProjectType> = ({ name, description, type, image, link,
                 <img className={styles.image} src={require(`../../images/screenshots/${image[0]}`)} alt="Preview" />
             </div>
             <div className={styles.col_content}>
-                <div className={styles.tag}>{type}</div>
-                <h3 className={styles.title}>{name}</h3>
-                <div className={styles.text}>{description}</div>
+                <div>
+                    <span className={styles.tag}>{type}</span>
+                    <h3 className={styles.title}>{name}</h3>
+                    <p className={styles.text}>{description}</p>
+                </div>
+
                 <div className={styles.links}>
                     <a className={cn(styles.link, styles.web_link)} href={link} target="_blank" rel="noreferrer">
                         <img className={styles.link_icon} src={linkIcon} width="12" height="12" alt="" />

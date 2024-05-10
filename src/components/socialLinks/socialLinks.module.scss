@@ -1,9 +1,7 @@
 @use "/src/styles/mixins";
-@use "/src/styles/variables";
 
 .social_links_wrapper {
     @include mixins.breakpoint-tablet-down {
-        padding-bottom: 5.5rem;
         text-align: center;
     }
 
@@ -37,6 +35,10 @@
 
         li::before {
             display: none;
+        }
+
+        a {
+            @include mixins.button-hover();
         }
 
         .icon {

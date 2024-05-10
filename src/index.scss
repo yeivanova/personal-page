@@ -1,5 +1,6 @@
 @use "/src/styles/mixins";
 @import "./styles/fonts.scss";
+@import "./styles/animation.scss";
 
 :root {
     --textColor: #000000;
@@ -46,6 +47,7 @@ html {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 
     @include mixins.scrollbar();
 }
@@ -113,25 +115,20 @@ body {
     display: none;
 }
 
-.no_margin {
+.no-margin {
     margin: 0;
 }
 
-.align_center {
+.align-center {
     text-align: center;
 }
 
-.scrollbar_hidden {
+.scrollbar-hidden {
     @include mixins.no-scrollbar();
 }
 
-.horizontal_scrollbar {
+.horizontal-scrollbar {
     @include mixins.horizontal-scrollbar();
-}
-
-html {
-    color: var(--lightColor);
-    background-color: var(--backgroundColor);
 }
 
 #bgCanvas {
@@ -150,6 +147,11 @@ html {
 
     filter: blur(50px) brightness(75%);
     -webkit-filter: blur(50px) brightness(75%);
+}
+
+html {
+    color: var(--lightColor);
+    background-color: var(--backgroundColor);
 }
 
 h1 {
@@ -196,4 +198,24 @@ ul {
         font-size: 2rem;
         line-height: 2.4rem;
     }
+}
+
+swiper-container::part(container) {
+    overflow: visible;
+}
+
+swiper-container {
+    --swiper-navigation-size: 2.5rem;
+    --swiper-theme-color: var(--lightColor);
+}
+
+swiper-container::part(button-prev) {  
+    top: 100%;
+    left: 100%;
+    transform: translate(-8rem, 2.5rem);
+}
+
+swiper-container::part(button-next) {
+    top: 100%;
+    transform: translate(-1rem, 2.5rem);
 }

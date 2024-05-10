@@ -2,63 +2,22 @@
 
 .scroll_list_container {
     position: relative;
-    max-height: 19rem;
-    padding: 8rem 20px 8rem;
-    overflow-y: auto;
 
-    
+    @include mixins.breakpoint-tablet-up {
+        max-height: 19rem;
+        padding: 8rem 20px 8rem;
+        overflow-y: auto;
+    }
 }
 
 .scroll_list {
     text-align: center;
 
     li {
-		margin-bottom: 0.7rem;
+        margin-bottom: 0.7rem;
 
         &::before {
             display: none;
-        }
-    }
-}
-
-@keyframes animate-it {
-    0% {
-        opacity: 0.1;
-		font-weight: normal;
-		transform: translateY(-3px);
-    }
-    25% {
-        opacity: 0.25;
-		font-weight: normal;
-		transform: translateY(-3px);
-    }
-    50% {
-        opacity: 1;
-		font-weight: bold;
-		transform: translateY(0);
-    }
-    75% {
-        opacity: 0.25;
-		font-weight: normal;
-		transform: translateY(-3px);
-    }
-    100% {
-        opacity: 0.1;
-		font-weight: normal;
-		transform: translateY(-3px);
-    }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    @supports (animation-timeline: scroll()) {
-        .scroll_list li {
-            scroll-snap-align: center;
-            animation: animate-it 1.5s ease both;
-            animation-duration: 1.5s;
-            animation-timing-function: ease;
-            animation-fill-mode: both;
-            animation-name: animate-it;
-            animation-timeline: view() !important;
         }
     }
 }

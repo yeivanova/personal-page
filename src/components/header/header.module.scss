@@ -1,7 +1,9 @@
 @use "/src/styles/mixins";
 
 .navigation {
-	padding: 3.75rem 0 1.875rem;
+	max-width: 70rem;
+	padding: 3.75rem 2.5rem 1.875rem;
+	margin: auto;
 
 	.navigation_list {
 		display: inline-flex;
