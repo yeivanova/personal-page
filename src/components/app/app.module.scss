@@ -64,6 +64,7 @@
 
 .col_projects {
     margin-bottom: 0;
+    overflow-x: hidden;
 }
 
 .sticky {
@@ -195,8 +196,6 @@ ul.text_list {
 }
 
 .projects {
-    // max-width: 70rem;
-    // padding: 0 2.5rem;
     margin: auto;
     overflow: scroll;
     scroll-snap-type: x mandatory;
@@ -210,9 +209,6 @@ ul.text_list {
     align-items: stretch;
     gap: 2.5rem;
     padding: 0 0 2rem;
-}
-
-.project_outer {
 }
 
 @include mixins.breakpoint-tablet-down {

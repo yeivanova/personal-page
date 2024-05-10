@@ -29,8 +29,6 @@ body {
 
 html {
     font-size: 16px;
-    overflow-x: hidden;
-    overflow-y: scroll;
 
     @include mixins.breakpoint-laptop-large-down {
       font-size: 14px;
