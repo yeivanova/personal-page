@@ -2,7 +2,7 @@ export type ProjectType = {
     name: string;
     description: string;
     type: "React App" | "Landing Page";
-    image: string[];
+    previews: string[];
     link: string;
     codeLink: string;
 };

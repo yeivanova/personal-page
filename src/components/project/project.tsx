@@ -1,14 +1,26 @@
-import { FC } from "react";
+import { FC, useState, useEffect } from "react";
 import styles from "./project.module.scss";
 import cn from "classnames";
 import linkIcon from "../../images/icons/link.svg";
 import { ProjectType } from "../../types/projectType";
 
-export const Project: FC<ProjectType> = ({ name, description, type, image, link, codeLink }) => {
+export const Project: FC<ProjectType> = ({ name, description, type, previews, link, codeLink }) => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex((prevIndex) => (prevIndex < previews.length - 1 ? prevIndex + 1 : 0));
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className={styles.project}>
             <div className={styles.col_img}>
-                <img className={styles.image} src={require(`../../images/screenshots/${image[0]}`)} alt="Preview" />
+                {previews?.map((image, index) => (
+                    <img className={cn(styles.image, index === currentImageIndex ? styles.active : "")} src={require(`../../images/screenshots/${image}`)} key={index} alt={`${name} Preview`} />
+                ))}
             </div>
             <div className={styles.col_content}>
                 <div>
