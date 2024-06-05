@@ -32,10 +32,10 @@ export const Project: FC<ProjectType> = ({ name, description, type, previews, li
                 <div className={styles.links}>
                     <a className={cn(styles.link, styles.web_link)} href={link} target="_blank" rel="noreferrer">
                         <img className={styles.link_icon} src={linkIcon} width="12" height="12" alt="" />
-                        Check it out
+                        <span>Check it out</span>
                     </a>
                     <a className={cn(styles.link, styles.code_link)} href={codeLink} target="_blank" rel="noreferrer">
-                        Code here
+                        <span>Code here</span>
                     </a>
                 </div>
             </div>

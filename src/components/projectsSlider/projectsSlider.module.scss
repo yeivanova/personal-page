@@ -12,3 +12,84 @@
 		width: 32rem;
     }
 }
+
+.nav_button {
+	width: 5rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+	color: var(--lightColor);
+	border: none;
+	background-color: transparent;
+	opacity: 1;
+	// transition: opacity 0.25s ease;
+	cursor: pointer;
+	z-index: 1;
+
+	@include mixins.breakpoint-desktop-down {
+		width: auto;
+		top: 100%;
+		font-size: 1.125rem;
+		line-height: 1.2;
+    }
+
+	span {
+		transform: scaleY(1.25);
+	}
+
+	svg {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.prev {
+	text-align: right;
+	left: -5rem;
+
+	@include mixins.breakpoint-desktop-down {
+        left: 2.5rem;
+    }
+
+	svg {
+		transform: rotateY(-180deg);
+	}
+}
+
+.next {
+	text-align: left;
+	right: -5rem;
+
+	@include mixins.breakpoint-desktop-down {
+        right: 2.5rem;
+    }
+
+	svg {
+		margin-left: -0.5rem;
+	}
+}
+
+.visible {
+	opacity: 1;
+	transition: opacity 0.25s ease;
+}
+
+.hidden {
+	display: none;
+	opacity: 0;
+}
+
+.animated {
+	opacity: 1;
+	animation: 1s fadeIn ease;
+}
+
+@keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
