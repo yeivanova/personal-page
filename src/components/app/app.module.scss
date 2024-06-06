@@ -104,7 +104,7 @@
     text-decoration: none;
     text-transform: uppercase;
 
-    @include mixins.button-hover();
+    @include mixins.button-hover(var(--accentColor));
 }
 
 h1 {
@@ -189,7 +189,7 @@ ul.text_list {
     text-transform: uppercase;
     filter: none;
 
-    @include mixins.button-hover();
+    @include mixins.button-hover(var(--accentColor));
 
     @include mixins.breakpoint-tablet-down {
         writing-mode: unset;

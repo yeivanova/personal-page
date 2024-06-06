@@ -51,11 +51,11 @@
     }
 }
 
-@mixin button-hover {
-  transition: filter 0.5s ease;
+@mixin button-hover($background_color) {
+  transition: background-color 0.5s ease;
 
     &:hover {
-        filter: brightness(1.2);
+        background-color: color-mix(in srgb, $background_color 100%, var(--lightColor) 20%);
     }
 }
 
