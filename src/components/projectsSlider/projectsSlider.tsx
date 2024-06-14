@@ -47,7 +47,7 @@ export const ProjectsSlider: FC = () => {
 
     return (
         <div className={cn(styles.projects)}>
-            <swiper-container ref={swiperElRef} space-between={140} centered-slides={true} navigation="false" className="project-swiper">
+            <swiper-container ref={swiperElRef} space-between={58} centered-slides={true} navigation="false" className="project-swiper">
                 {typeof projectsData !== "undefined" ? (
                     projectsData.map((project, index) => (
                         <swiper-slide key={index} lazy="lazy" data-slide="slide">
@@ -60,25 +60,15 @@ export const ProjectsSlider: FC = () => {
                     <p>There are no projects yet...</p>
                 )}
             </swiper-container>
-            <button className={cn(styles.nav_button, styles.prev, prevHiddenClass)} onClick={handlePrev} onAnimationEnd={() => setAnimated(false)}>
-                <svg width="71" height="33" viewBox="0 0 71 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M49.8365 25.9423L59.3942 16.3846L49.8365 6.8269" stroke="white" strokeOpacity={sliderProgress === 0 ? "1" : sliderProgress === 1 ? "0.5": "0.2"} strokeWidth="2.73077" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M30.7211 25.9423L40.2788 16.3846L30.7211 6.8269" stroke="white" strokeOpacity={sliderProgress === 1 ? "1": "0.5"} strokeWidth="2.73077" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M11.6058 25.9423L21.1634 16.3846L11.6058 6.8269" stroke="white" strokeOpacity={sliderProgress === 0 ? "0.2" : sliderProgress === 1 ? "0.5": "1"} strokeWidth="2.73077" strokeLinecap="round" strokeLinejoin="round" />
+            <button className={cn(styles.nav_button, styles.prev, prevHiddenClass)} aria-label="Previous Project" onClick={handlePrev} onAnimationEnd={() => setAnimated(false)}>
+                <svg width="21" height="39" viewBox="0 0 21 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.1815 1.00006L1.00003 19.1815L19.1815 37.363" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <span>
-                    Previous Project
-                </span>
             </button>
-            <button className={cn(styles.nav_button, styles.next, nextHiddenClass)} onClick={handleNext} onAnimationEnd={() => setAnimated(false)}>
-                <svg width="71" height="33" viewBox="0 0 71 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M49.8365 25.9423L59.3942 16.3846L49.8365 6.8269" stroke="white" strokeOpacity={sliderProgress === 0 ? "0.2" : sliderProgress === 1 ? "0.5": "1"} strokeWidth="2.73077" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M30.7211 25.9423L40.2788 16.3846L30.7211 6.8269" stroke="white" strokeOpacity={sliderProgress === 1 ? "1": "0.5"} strokeWidth="2.73077" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M11.6058 25.9423L21.1634 16.3846L11.6058 6.8269" stroke="white" strokeOpacity={sliderProgress === 0 ? "1" : sliderProgress === 1 ? "0.5": "0.2"} strokeWidth="2.73077" strokeLinecap="round" strokeLinejoin="round" />
+            <button className={cn(styles.nav_button, styles.next, nextHiddenClass)} aria-label="Next Project" onClick={handleNext} onAnimationEnd={() => setAnimated(false)}>
+                <svg width="21" height="39" viewBox="0 0 21 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.1815 1.00006L1.00003 19.1815L19.1815 37.363" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <span>
-                    Next Project
-                </span>
             </button>
         </div>
     );

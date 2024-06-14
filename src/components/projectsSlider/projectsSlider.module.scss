@@ -14,7 +14,6 @@
 }
 
 .nav_button {
-	width: 5rem;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -24,19 +23,11 @@
 	border: none;
 	background-color: transparent;
 	opacity: 1;
-	// transition: opacity 0.25s ease;
 	cursor: pointer;
 	z-index: 1;
 
-	@include mixins.breakpoint-desktop-down {
-		width: auto;
-		top: 100%;
-		font-size: 1.125rem;
-		line-height: 1.2;
-    }
-
-	span {
-		transform: scaleY(1.25);
+	&:hover svg path {
+		stroke: var(--highlightColor);
 	}
 
 	svg {
@@ -46,27 +37,23 @@
 
 .prev {
 	text-align: right;
-	left: -5rem;
+	left: -0.5rem;
 
-	@include mixins.breakpoint-desktop-down {
-        left: 2.5rem;
+	@include mixins.breakpoint-tablet-down {
+        left: -1.5rem;
     }
-
-	svg {
-		transform: rotateY(-180deg);
-	}
 }
 
 .next {
 	text-align: left;
-	right: -5rem;
+	right: -0.5rem;
 
-	@include mixins.breakpoint-desktop-down {
-        right: 2.5rem;
+	@include mixins.breakpoint-tablet-down {
+        right: -1.5rem;
     }
 
 	svg {
-		margin-left: -0.5rem;
+		transform: rotateY(-180deg);
 	}
 }
 
